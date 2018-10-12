@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#28BBED</color>
+    <color name="colorPrimaryDark">#14568F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#DAFAFF</color>
+    <color name="white">#ffffff</color>
+
+    <color name="sortPopupLine">#e1e4e7</color>
+    <color name="redError">#e53935</color>
+    <color name="tint">#757575</color>
+</resources>

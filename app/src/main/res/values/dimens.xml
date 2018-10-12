@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="bottom_nav_bar_height">48dp</dimen>
+
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_big">12dp</dimen>
+
+    <dimen name="icon_small">32dp</dimen>
+    <dimen name="icon_medium">64dp</dimen>
+
+</resources>

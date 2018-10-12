@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_logo"/>
+
+    <ImageView
+        android:layout_below="@+id/imageLogo"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-120dp"
+
+        android:src="@drawable/circle3"/>
+
+    <TextView
+        android:id="@+id/textLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LOGDOC"
+        android:layout_marginTop="25dp"
+        android:textSize="40dp"
+        android:layout_below="@+id/imageLogo"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textInfoAuth"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textLogo"
+        android:text="The global system for controlling the movement of delivery services"/>
+
+
+    <Button
+        android:id="@+id/startLog_in"
+        android:layout_marginTop="60dp"
+        android:layout_width="250dp"
+        android:text="START"
+        android:textSize="24dp"
+        android:textColor="#616161"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textInfoAuth"
+        android:background="@drawable/button_round"/>
+
+    <FrameLayout
+        android:id="@+id/fragmentLog_in"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/frame_authorization_round">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/fragment_log_in"/>
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+
+
+

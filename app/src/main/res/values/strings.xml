@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LOGDOC Delivery</string>
+
+    <string name="authorization_base64">web:mobile</string>
+    <string name="authorization_basic">Basic </string>
+
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+
+    <string name="text_auth_button">Войти</string>
+    <string name="text_notification_description">Новый заказ:</string>
+    <string name="text_no_data">Нет заказов</string>
+
+    <string name="error_login">Неверный логин!</string>
+    <string name="error_password">Неверный пароль!</string>
+
+    <string name="error_auth">Ошибка авторизации</string>
+    <string name="error_internet">Подключение к интернету отсутствует</string>
+    <string name="google_maps_API_key">AIzaSyB99dO81dGSp7eUpAil4l4apOXHc_TEfL8</string>
+    <string name="weather_API_key">49bd12b55898b51386adf31f17845dc4</string>
+
+
+</resources>
