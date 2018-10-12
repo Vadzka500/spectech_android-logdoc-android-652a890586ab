@@ -79,6 +79,8 @@
             android:layout_marginRight="20dp"
             android:paddingTop="2dp"
             android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword"
             android:background="@drawable/round_button"/>
 
         <View
