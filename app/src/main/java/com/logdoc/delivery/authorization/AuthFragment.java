@@ -36,14 +36,15 @@ import com.logdoc.delivery.Internet;
 import com.logdoc.delivery.R;
 import com.logdoc.delivery.mainView.MainFragment;
 import com.logdoc.delivery.mainView.MainPresenter;
+import com.logdoc.delivery.ui.views.CustomInput;
 
 public class AuthFragment extends Fragment implements AuthContract.View {
 
     private AuthContract.Presenter mPresenter;
 
-    private EditText mLoginEditText;
+    private CustomInput mLoginEditText;
 
-    private EditText mPasswordEditText;
+    private CustomInput mPasswordEditText;
 
     private Button mstartLog_in;
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:input="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/item_input_container">
+
+    <TextView
+        android:id="@+id/input_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_login"
+        android:textSize="14dp"
+        input:layout_constraintStart_toStartOf="parent"
+        input:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/input_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/round_button"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/inc_lock"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:textColorHint="@color/textHint"
+        android:typeface="normal"
+        android:textStyle="normal"
+        android:textSize="16dp"
+        input:layout_constraintEnd_toEndOf="parent"
+        input:layout_constraintHorizontal_bias="0.0"
+        input:layout_constraintStart_toStartOf="@id/input_title_text_view"
+        input:layout_constraintTop_toBottomOf="@id/input_title_text_view" />
+
+</android.support.constraint.ConstraintLayout>

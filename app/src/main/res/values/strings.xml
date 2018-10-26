@@ -1,11 +1,16 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">LOGDOC Delivery</string>
 
     <string name="authorization_base64">web:mobile</string>
     <string name="authorization_basic">Basic </string>
 
-    <string name="hint_login">Логин</string>
-    <string name="hint_password">Пароль</string>
+    <string name="title_login">Login</string>
+    <string name="title_password">Password</string>
+
+    <string name="hint_login" tools:ignore="TypographyEllipsis">Please input login...</string>
+    <string name="hint_password" tools:ignore="TypographyEllipsis">Please input password...</string>
+
+    <string name="textErrorData" tools:ignore="TypographyEllipsis">Please enter the correct data...</string>
 
     <string name="text_auth_button">Войти</string>
     <string name="text_notification_description">Новый заказ:</string>

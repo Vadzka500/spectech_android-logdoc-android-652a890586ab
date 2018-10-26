@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:input="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
@@ -13,12 +14,11 @@
         android:textSize="16dp"
         android:textColor="@color/redError"
         android:visibility="invisible"
-        android:text="Please enter the correct data..."/>
+        android:text="@string/textErrorData"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-
         android:layout_marginTop="15dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -30,59 +30,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="14dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="4dp"/>
-
-    <EditText
-        android:id="@+id/login_edit_text"
-        android:drawableLeft="@drawable/icn_user"
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:hint="Please input login..."
-        android:textColorHint="#BDBDBD"
-        android:gravity="center_vertical"
-        android:textSize="16dp"
-        android:layout_marginLeft="20dp"
-        android:paddingLeft="8dp"
-        android:drawablePadding="8dp"
-        android:layout_marginRight="20dp"
-        android:paddingTop="2dp"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:background="@drawable/round_button"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password"
-            android:textSize="14dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="4dp"/>
-
-        <EditText
-            android:id="@+id/password_edit_text"
-            android:drawableLeft="@drawable/inc_lock"
+        <com.logdoc.delivery.ui.views.CustomInput
+            android:id="@+id/login_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:hint="Please input password..."
-            android:textColorHint="#BDBDBD"
-            android:gravity="center_vertical"
-            android:textSize="16dp"
-            android:layout_marginLeft="20dp"
-            android:paddingLeft="12dp"
-            android:drawablePadding="13dp"
-            android:layout_marginRight="20dp"
-            android:paddingTop="2dp"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:inputType="textPassword"
-            android:background="@drawable/round_button"/>
+            android:layout_height="wrap_content"
+            input:hint="@string/hint_login"
+            input:input_type="1"
+            input:src="@drawable/icn_user"
+            input:title="@string/title_login"/>
+
+        <com.logdoc.delivery.ui.views.CustomInput
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            input:hint="@string/hint_password"
+            input:input_type="128"
+            input:src="@drawable/inc_lock"
+            input:title="@string/title_password"
+            />
 
         <View
             android:layout_width="match_parent"
@@ -97,7 +63,7 @@
             android:id="@+id/Log_in"
             android:layout_marginTop="7dp"
             android:layout_width="match_parent"
-            android:text="Login"
+            android:text="@string/title_login"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:textSize="24dp"
